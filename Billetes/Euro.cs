@@ -36,6 +36,20 @@ namespace Billetes
         public static double GetCotizacion
         {
             get { return _cotizRespectoDolar; }
+
+            
+        }
+
+        public static double SetCotizacion
+        {
+            set
+            {
+                if (_cotizRespectoDolar >= 0 && _cotizRespectoDolar <= double.MaxValue)
+                {
+                    _cotizRespectoDolar = value;
+                }
+
+            }
         }
 
 
@@ -97,12 +111,6 @@ namespace Billetes
         public static Euro operator -(Euro e, Dolar d)
         {
             return new Euro(e.GetCantidad - ((Euro)d).GetCantidad);
-        }
-
-
-        public static void SetCotizacion()
-        {
-
         }
     }
 }

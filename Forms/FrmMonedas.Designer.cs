@@ -39,9 +39,9 @@
             tBxCantPeso = new TextBox();
             btnLock = new Button();
             imgIconos = new ImageList(components);
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            btnConvertEuro = new Button();
+            btnConvertDolar = new Button();
+            btnConvertPeso = new Button();
             tBxEuroPeso = new TextBox();
             tBxEuroDolar = new TextBox();
             tBxEuroEuro = new TextBox();
@@ -143,35 +143,35 @@
             imgIconos.Images.SetKeyName(4, "291.png");
             imgIconos.Images.SetKeyName(5, "286.png");
             // 
-            // button2
+            // btnConvertEuro
             // 
-            button2.ImageIndex = 5;
-            button2.ImageList = imgIconos;
-            button2.Location = new Point(207, 75);
-            button2.Name = "button2";
-            button2.Size = new Size(104, 29);
-            button2.TabIndex = 8;
-            button2.UseVisualStyleBackColor = true;
+            btnConvertEuro.ImageIndex = 5;
+            btnConvertEuro.ImageList = imgIconos;
+            btnConvertEuro.Location = new Point(207, 75);
+            btnConvertEuro.Name = "btnConvertEuro";
+            btnConvertEuro.Size = new Size(104, 29);
+            btnConvertEuro.TabIndex = 8;
+            btnConvertEuro.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnConvertDolar
             // 
-            button3.ImageIndex = 5;
-            button3.ImageList = imgIconos;
-            button3.Location = new Point(207, 119);
-            button3.Name = "button3";
-            button3.Size = new Size(104, 29);
-            button3.TabIndex = 9;
-            button3.UseVisualStyleBackColor = true;
+            btnConvertDolar.ImageIndex = 5;
+            btnConvertDolar.ImageList = imgIconos;
+            btnConvertDolar.Location = new Point(207, 119);
+            btnConvertDolar.Name = "btnConvertDolar";
+            btnConvertDolar.Size = new Size(104, 29);
+            btnConvertDolar.TabIndex = 9;
+            btnConvertDolar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnConvertPeso
             // 
-            button4.ImageIndex = 5;
-            button4.ImageList = imgIconos;
-            button4.Location = new Point(207, 162);
-            button4.Name = "button4";
-            button4.Size = new Size(104, 29);
-            button4.TabIndex = 10;
-            button4.UseVisualStyleBackColor = true;
+            btnConvertPeso.ImageIndex = 5;
+            btnConvertPeso.ImageList = imgIconos;
+            btnConvertPeso.Location = new Point(207, 162);
+            btnConvertPeso.Name = "btnConvertPeso";
+            btnConvertPeso.Size = new Size(104, 29);
+            btnConvertPeso.TabIndex = 10;
+            btnConvertPeso.UseVisualStyleBackColor = true;
             // 
             // tBxEuroPeso
             // 
@@ -272,6 +272,7 @@
             tBxCotizPeso.Name = "tBxCotizPeso";
             tBxCotizPeso.Size = new Size(147, 27);
             tBxCotizPeso.TabIndex = 25;
+            tBxCotizPeso.Leave += tBxCotizPeso_Leave;
             // 
             // tBxCotizDolar
             // 
@@ -288,6 +289,7 @@
             tBxCotizEuro.Name = "tBxCotizEuro";
             tBxCotizEuro.Size = new Size(147, 27);
             tBxCotizEuro.TabIndex = 23;
+            tBxCotizEuro.Leave += tBxCotizEuro_Leave;
             // 
             // FrmMonedas
             // 
@@ -309,9 +311,9 @@
             Controls.Add(tBxEuroPeso);
             Controls.Add(tBxEuroDolar);
             Controls.Add(tBxEuroEuro);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btnConvertPeso);
+            Controls.Add(btnConvertDolar);
+            Controls.Add(btnConvertEuro);
             Controls.Add(btnLock);
             Controls.Add(tBxCantPeso);
             Controls.Add(tBxCantDolar);
@@ -341,9 +343,9 @@
         private TextBox tBxCantDolar;
         private TextBox tBxCantPeso;
         private Button btnLock;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button btnConvertEuro;
+        private Button btnConvertDolar;
+        private Button btnConvertPeso;
         private TextBox tBxEuroPeso;
         private TextBox tBxEuroDolar;
         private TextBox tBxEuroEuro;

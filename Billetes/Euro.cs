@@ -40,16 +40,14 @@ namespace Billetes
             
         }
 
-        public static double SetCotizacion
+        public static double SetCotizacion(double nuevaCotizacion)
         {
-            set
+            
+            if (_cotizRespectoDolar >= 0 && _cotizRespectoDolar <= double.MaxValue)
             {
-                if (_cotizRespectoDolar >= 0 && _cotizRespectoDolar <= double.MaxValue)
-                {
-                    _cotizRespectoDolar = value;
-                }
-
+                _cotizRespectoDolar = nuevaCotizacion;
             }
+            return _cotizRespectoDolar;
         }
 
 
@@ -111,6 +109,12 @@ namespace Billetes
         public static Euro operator -(Euro e, Dolar d)
         {
             return new Euro(e.GetCantidad - ((Euro)d).GetCantidad);
+        }
+
+        public override string ToString()
+        {
+            // Devolver el valor del objeto Dolar como cadena
+            return GetCantidad.ToString("F2");
         }
     }
 }

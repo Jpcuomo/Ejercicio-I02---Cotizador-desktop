@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -117,6 +118,12 @@ namespace Billetes
         public static Dolar operator -(Dolar d, Peso p)
         {
             return new Dolar(d.GetCantidad - ((Dolar)p).GetCantidad);
+        }
+
+        public override string ToString()
+        {
+            // Devolver el valor del objeto Dolar como cadena
+            return GetCantidad.ToString("F2");
         }
     }
 }

@@ -42,15 +42,15 @@
             btnConvertEuro = new Button();
             btnConvertDolar = new Button();
             btnConvertPeso = new Button();
-            tBxEuroPeso = new TextBox();
-            tBxEuroDolar = new TextBox();
-            tBxEuroEuro = new TextBox();
-            tBxDolarPeso = new TextBox();
-            tBxDolarDolar = new TextBox();
-            tBxDolarEuro = new TextBox();
-            tBxPesoPeso = new TextBox();
-            tBxPesoDolar = new TextBox();
-            tBxPesoEuro = new TextBox();
+            tBxPesoAEuro = new TextBox();
+            tBxDolarAEuro = new TextBox();
+            tBxEuroAEuro = new TextBox();
+            tBxPesoADolar = new TextBox();
+            tBxDolarADolar = new TextBox();
+            tBxEuroADolar = new TextBox();
+            tBxPesoAPeso = new TextBox();
+            tBxDolarAPeso = new TextBox();
+            tBxEuroAPeso = new TextBox();
             lblEuroCol = new Label();
             lblDolarCol = new Label();
             lblPesoCol = new Label();
@@ -152,6 +152,7 @@
             btnConvertEuro.Size = new Size(104, 29);
             btnConvertEuro.TabIndex = 8;
             btnConvertEuro.UseVisualStyleBackColor = true;
+            btnConvertEuro.Click += btnConvertEuro_Click;
             // 
             // btnConvertDolar
             // 
@@ -162,6 +163,7 @@
             btnConvertDolar.Size = new Size(104, 29);
             btnConvertDolar.TabIndex = 9;
             btnConvertDolar.UseVisualStyleBackColor = true;
+            btnConvertDolar.Click += btnConvertDolar_Click;
             // 
             // btnConvertPeso
             // 
@@ -172,69 +174,70 @@
             btnConvertPeso.Size = new Size(104, 29);
             btnConvertPeso.TabIndex = 10;
             btnConvertPeso.UseVisualStyleBackColor = true;
+            btnConvertPeso.Click += btnConvertPeso_Click;
             // 
-            // tBxEuroPeso
+            // tBxPesoAEuro
             // 
-            tBxEuroPeso.Location = new Point(329, 164);
-            tBxEuroPeso.Name = "tBxEuroPeso";
-            tBxEuroPeso.Size = new Size(147, 27);
-            tBxEuroPeso.TabIndex = 13;
+            tBxPesoAEuro.Location = new Point(329, 164);
+            tBxPesoAEuro.Name = "tBxPesoAEuro";
+            tBxPesoAEuro.Size = new Size(147, 27);
+            tBxPesoAEuro.TabIndex = 13;
             // 
-            // tBxEuroDolar
+            // tBxDolarAEuro
             // 
-            tBxEuroDolar.Location = new Point(329, 121);
-            tBxEuroDolar.Name = "tBxEuroDolar";
-            tBxEuroDolar.Size = new Size(147, 27);
-            tBxEuroDolar.TabIndex = 12;
+            tBxDolarAEuro.Location = new Point(329, 121);
+            tBxDolarAEuro.Name = "tBxDolarAEuro";
+            tBxDolarAEuro.Size = new Size(147, 27);
+            tBxDolarAEuro.TabIndex = 12;
             // 
-            // tBxEuroEuro
+            // tBxEuroAEuro
             // 
-            tBxEuroEuro.Location = new Point(329, 77);
-            tBxEuroEuro.Name = "tBxEuroEuro";
-            tBxEuroEuro.Size = new Size(147, 27);
-            tBxEuroEuro.TabIndex = 11;
+            tBxEuroAEuro.Location = new Point(329, 77);
+            tBxEuroAEuro.Name = "tBxEuroAEuro";
+            tBxEuroAEuro.Size = new Size(147, 27);
+            tBxEuroAEuro.TabIndex = 11;
             // 
-            // tBxDolarPeso
+            // tBxPesoADolar
             // 
-            tBxDolarPeso.Location = new Point(482, 164);
-            tBxDolarPeso.Name = "tBxDolarPeso";
-            tBxDolarPeso.Size = new Size(147, 27);
-            tBxDolarPeso.TabIndex = 16;
+            tBxPesoADolar.Location = new Point(482, 164);
+            tBxPesoADolar.Name = "tBxPesoADolar";
+            tBxPesoADolar.Size = new Size(147, 27);
+            tBxPesoADolar.TabIndex = 16;
             // 
-            // tBxDolarDolar
+            // tBxDolarADolar
             // 
-            tBxDolarDolar.Location = new Point(482, 121);
-            tBxDolarDolar.Name = "tBxDolarDolar";
-            tBxDolarDolar.Size = new Size(147, 27);
-            tBxDolarDolar.TabIndex = 15;
+            tBxDolarADolar.Location = new Point(482, 121);
+            tBxDolarADolar.Name = "tBxDolarADolar";
+            tBxDolarADolar.Size = new Size(147, 27);
+            tBxDolarADolar.TabIndex = 15;
             // 
-            // tBxDolarEuro
+            // tBxEuroADolar
             // 
-            tBxDolarEuro.Location = new Point(482, 77);
-            tBxDolarEuro.Name = "tBxDolarEuro";
-            tBxDolarEuro.Size = new Size(147, 27);
-            tBxDolarEuro.TabIndex = 14;
+            tBxEuroADolar.Location = new Point(482, 77);
+            tBxEuroADolar.Name = "tBxEuroADolar";
+            tBxEuroADolar.Size = new Size(147, 27);
+            tBxEuroADolar.TabIndex = 14;
             // 
-            // tBxPesoPeso
+            // tBxPesoAPeso
             // 
-            tBxPesoPeso.Location = new Point(635, 164);
-            tBxPesoPeso.Name = "tBxPesoPeso";
-            tBxPesoPeso.Size = new Size(147, 27);
-            tBxPesoPeso.TabIndex = 19;
+            tBxPesoAPeso.Location = new Point(635, 164);
+            tBxPesoAPeso.Name = "tBxPesoAPeso";
+            tBxPesoAPeso.Size = new Size(147, 27);
+            tBxPesoAPeso.TabIndex = 19;
             // 
-            // tBxPesoDolar
+            // tBxDolarAPeso
             // 
-            tBxPesoDolar.Location = new Point(635, 121);
-            tBxPesoDolar.Name = "tBxPesoDolar";
-            tBxPesoDolar.Size = new Size(147, 27);
-            tBxPesoDolar.TabIndex = 18;
+            tBxDolarAPeso.Location = new Point(635, 121);
+            tBxDolarAPeso.Name = "tBxDolarAPeso";
+            tBxDolarAPeso.Size = new Size(147, 27);
+            tBxDolarAPeso.TabIndex = 18;
             // 
-            // tBxPesoEuro
+            // tBxEuroAPeso
             // 
-            tBxPesoEuro.Location = new Point(635, 77);
-            tBxPesoEuro.Name = "tBxPesoEuro";
-            tBxPesoEuro.Size = new Size(147, 27);
-            tBxPesoEuro.TabIndex = 17;
+            tBxEuroAPeso.Location = new Point(635, 77);
+            tBxEuroAPeso.Name = "tBxEuroAPeso";
+            tBxEuroAPeso.Size = new Size(147, 27);
+            tBxEuroAPeso.TabIndex = 17;
             // 
             // lblEuroCol
             // 
@@ -295,6 +298,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(796, 203);
             Controls.Add(tBxCotizPeso);
             Controls.Add(tBxCotizDolar);
@@ -302,15 +306,15 @@
             Controls.Add(lblPesoCol);
             Controls.Add(lblDolarCol);
             Controls.Add(lblEuroCol);
-            Controls.Add(tBxPesoPeso);
-            Controls.Add(tBxPesoDolar);
-            Controls.Add(tBxPesoEuro);
-            Controls.Add(tBxDolarPeso);
-            Controls.Add(tBxDolarDolar);
-            Controls.Add(tBxDolarEuro);
-            Controls.Add(tBxEuroPeso);
-            Controls.Add(tBxEuroDolar);
-            Controls.Add(tBxEuroEuro);
+            Controls.Add(tBxPesoAPeso);
+            Controls.Add(tBxDolarAPeso);
+            Controls.Add(tBxEuroAPeso);
+            Controls.Add(tBxPesoADolar);
+            Controls.Add(tBxDolarADolar);
+            Controls.Add(tBxEuroADolar);
+            Controls.Add(tBxPesoAEuro);
+            Controls.Add(tBxDolarAEuro);
+            Controls.Add(tBxEuroAEuro);
             Controls.Add(btnConvertPeso);
             Controls.Add(btnConvertDolar);
             Controls.Add(btnConvertEuro);
@@ -327,7 +331,8 @@
             MinimizeBox = false;
             Name = "FrmMonedas";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Conversor";
+            Text = "Conversor de moneda";
+            TopMost = true;
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -346,15 +351,15 @@
         private Button btnConvertEuro;
         private Button btnConvertDolar;
         private Button btnConvertPeso;
-        private TextBox tBxEuroPeso;
-        private TextBox tBxEuroDolar;
-        private TextBox tBxEuroEuro;
-        private TextBox tBxDolarPeso;
-        private TextBox tBxDolarDolar;
-        private TextBox tBxDolarEuro;
-        private TextBox tBxPesoPeso;
-        private TextBox tBxPesoDolar;
-        private TextBox tBxPesoEuro;
+        private TextBox tBxPesoAEuro;
+        private TextBox tBxDolarAEuro;
+        private TextBox tBxEuroAEuro;
+        private TextBox tBxPesoADolar;
+        private TextBox tBxDolarADolar;
+        private TextBox tBxEuroADolar;
+        private TextBox tBxPesoAPeso;
+        private TextBox tBxDolarAPeso;
+        private TextBox tBxEuroAPeso;
         private Label lblEuroCol;
         private Label lblDolarCol;
         private Label lblPesoCol;

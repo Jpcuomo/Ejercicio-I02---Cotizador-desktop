@@ -182,6 +182,7 @@
             tBxPesoAEuro.Name = "tBxPesoAEuro";
             tBxPesoAEuro.Size = new Size(147, 27);
             tBxPesoAEuro.TabIndex = 13;
+            tBxPesoAEuro.TextAlign = HorizontalAlignment.Center;
             // 
             // tBxDolarAEuro
             // 
@@ -189,6 +190,7 @@
             tBxDolarAEuro.Name = "tBxDolarAEuro";
             tBxDolarAEuro.Size = new Size(147, 27);
             tBxDolarAEuro.TabIndex = 12;
+            tBxDolarAEuro.TextAlign = HorizontalAlignment.Center;
             // 
             // tBxEuroAEuro
             // 
@@ -196,6 +198,7 @@
             tBxEuroAEuro.Name = "tBxEuroAEuro";
             tBxEuroAEuro.Size = new Size(147, 27);
             tBxEuroAEuro.TabIndex = 11;
+            tBxEuroAEuro.TextAlign = HorizontalAlignment.Center;
             // 
             // tBxPesoADolar
             // 
@@ -203,6 +206,7 @@
             tBxPesoADolar.Name = "tBxPesoADolar";
             tBxPesoADolar.Size = new Size(147, 27);
             tBxPesoADolar.TabIndex = 16;
+            tBxPesoADolar.TextAlign = HorizontalAlignment.Center;
             // 
             // tBxDolarADolar
             // 
@@ -210,6 +214,7 @@
             tBxDolarADolar.Name = "tBxDolarADolar";
             tBxDolarADolar.Size = new Size(147, 27);
             tBxDolarADolar.TabIndex = 15;
+            tBxDolarADolar.TextAlign = HorizontalAlignment.Center;
             // 
             // tBxEuroADolar
             // 
@@ -217,6 +222,7 @@
             tBxEuroADolar.Name = "tBxEuroADolar";
             tBxEuroADolar.Size = new Size(147, 27);
             tBxEuroADolar.TabIndex = 14;
+            tBxEuroADolar.TextAlign = HorizontalAlignment.Center;
             // 
             // tBxPesoAPeso
             // 
@@ -224,6 +230,7 @@
             tBxPesoAPeso.Name = "tBxPesoAPeso";
             tBxPesoAPeso.Size = new Size(147, 27);
             tBxPesoAPeso.TabIndex = 19;
+            tBxPesoAPeso.TextAlign = HorizontalAlignment.Center;
             // 
             // tBxDolarAPeso
             // 
@@ -231,6 +238,7 @@
             tBxDolarAPeso.Name = "tBxDolarAPeso";
             tBxDolarAPeso.Size = new Size(147, 27);
             tBxDolarAPeso.TabIndex = 18;
+            tBxDolarAPeso.TextAlign = HorizontalAlignment.Center;
             // 
             // tBxEuroAPeso
             // 
@@ -238,6 +246,7 @@
             tBxEuroAPeso.Name = "tBxEuroAPeso";
             tBxEuroAPeso.Size = new Size(147, 27);
             tBxEuroAPeso.TabIndex = 17;
+            tBxEuroAPeso.TextAlign = HorizontalAlignment.Center;
             // 
             // lblEuroCol
             // 
@@ -275,6 +284,7 @@
             tBxCotizPeso.Name = "tBxCotizPeso";
             tBxCotizPeso.Size = new Size(147, 27);
             tBxCotizPeso.TabIndex = 25;
+            tBxCotizPeso.TextAlign = HorizontalAlignment.Center;
             tBxCotizPeso.Leave += tBxCotizPeso_Leave;
             // 
             // tBxCotizDolar
@@ -285,6 +295,7 @@
             tBxCotizDolar.Size = new Size(147, 27);
             tBxCotizDolar.TabIndex = 24;
             tBxCotizDolar.Text = "1";
+            tBxCotizDolar.TextAlign = HorizontalAlignment.Center;
             // 
             // tBxCotizEuro
             // 
@@ -292,6 +303,7 @@
             tBxCotizEuro.Name = "tBxCotizEuro";
             tBxCotizEuro.Size = new Size(147, 27);
             tBxCotizEuro.TabIndex = 23;
+            tBxCotizEuro.TextAlign = HorizontalAlignment.Center;
             tBxCotizEuro.Leave += tBxCotizEuro_Leave;
             // 
             // FrmMonedas

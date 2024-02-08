@@ -36,10 +36,10 @@ namespace Forms
             tBxPesoAPeso.ReadOnly = true;
 
             // Cotización inicial del Euro
-            tBxCotizEuro.Text = Euro.GetCotizacion.ToString("F2");
+            tBxCotizEuro.Text = Euro.GetCotizacion.ToString("F4");
 
             // Cotización inicial del Peso
-            tBxCotizPeso.Text = Peso.GetCotizacion.ToString("F2");
+            tBxCotizPeso.Text = Peso.GetCotizacion.ToString("F4");
         }
 
 
@@ -76,6 +76,7 @@ namespace Forms
             else
             {
                 Euro.SetCotizacion(double.Parse(tBxCotizEuro.Text));
+                tBxCotizEuro.Text = Euro.GetCotizacion.ToString("F4");
             }
         }
 
@@ -88,6 +89,7 @@ namespace Forms
             else
             {
                 Peso.SetCotizacion(double.Parse(tBxCotizPeso.Text));
+                tBxCotizPeso.Text = Peso.GetCotizacion.ToString("F4");
             }
         }
 
@@ -102,7 +104,7 @@ namespace Forms
             }
             else
             {
-                tBxEuroAEuro.Text = tBxCantEuro.Text;
+                tBxEuroAEuro.Text = tBxCantEuro.Text.ToString();
 
                 euro = new Euro(double.Parse(tBxCantEuro.Text), Euro.GetCotizacion);
                 tBxEuroADolar.Text = ((Dolar)euro).ToString();
@@ -120,7 +122,7 @@ namespace Forms
             }
             else
             {
-                tBxDolarADolar.Text = tBxCantDolar.Text;
+                tBxDolarADolar.Text = tBxCantDolar.Text.ToString();
 
                 dolar = new Dolar(double.Parse(tBxCantDolar.Text), Dolar.GetCotizacion);
                 tBxDolarAEuro.Text = ((Euro)dolar).ToString();
@@ -143,7 +145,7 @@ namespace Forms
 
                 tBxPesoADolar.Text = ((Dolar)peso).ToString();
 
-                tBxPesoAPeso.Text = tBxCantPeso.Text;
+                tBxPesoAPeso.Text = tBxCantPeso.Text.ToString();
             }
         }
 
@@ -153,7 +155,7 @@ namespace Forms
         {
             string mensaje;
             double numero;
-            string patron = @"^-?[0-9]+(?:,[0-9]{1,2})?$";
+            string patron = @"^-?[0-9]+(?:,[0-9]+)?$";
 
             if (string.IsNullOrEmpty(numeroString))
             {

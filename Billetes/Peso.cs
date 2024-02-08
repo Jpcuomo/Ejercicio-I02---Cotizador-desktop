@@ -111,7 +111,7 @@ namespace Billetes
         public override string ToString()
         {
             // Devolver el valor del objeto Dolar como cadena
-            return GetCantidad.ToString("F2");
+            return GetCantidad.ToString("F4");
         }
     }
 }
